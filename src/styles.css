@@ -1,0 +1,102 @@
+@font-face {
+    font-family: InterVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./fonts/InterVariable.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: InterVariable;
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./fonts/InterVariable-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: BricolageGrotesqueVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./fonts/BricolageGrotesqueVariable.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overscroll-behavior: none;
+    background-color: #f0f0f0;
+    color: black;
+    font-family: 'InterVariable', sans-serif;
+    font-feature-settings: 'cv06' 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 11vw;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    line-height: 0.75em;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    pointer-events: all;
+    color: black;
+    text-decoration: none;
+}
+
+svg {
+    fill: black;
+}
+
+/* Narrow screens (portrait) */
+@media (max-aspect-ratio: 3/4) {
+    h1 {
+        top: 80vh;
+    }
+}
+
+/* Wide screens (landscape) */
+@media (min-aspect-ratio: 4/3) {
+    h1 {
+        top: 120vh;
+    }
+}
+
+/* Square screens */
+@media (aspect-ratio: 1/1) {
+    h1 {
+        top: 100vh;
+    }
+}

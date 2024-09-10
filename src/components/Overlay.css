@@ -1,0 +1,315 @@
+/* Overlay.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay.fading-out {
+    opacity: 0;  /* Fade out */
+    visibility: hidden; /* Hide after transition */
+}
+
+.overlayContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    max-width: 900px;
+    max-height: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.overlayVideo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.overlayUnorderedList,
+.overlayOrderedList {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.overlayHeader {
+    text-align: center;
+    font-size: 2.125rem;
+    margin-bottom: 24px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.overlaySubtitle {
+    font-family: BricolageGrotesqueVariable;
+    font-size: 0.6em;
+    color: #757575;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+}
+
+.overlayMainTitle {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1;
+    color: #0f172a;
+}
+
+.overlayParagraph {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.overlayparagraphheader {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    line-height: 160%;
+    font-weight: 800;
+}
+
+.overlayparagraphsubheader {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  line-height: 160%;
+  font-weight: 600;
+}
+
+.overlayImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 20px;;
+}
+
+.overlayCaption {
+  font-size: 0.925rem;
+  color: #222222;
+  text-align: center;
+  max-width: 100%;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.overlayImageContainer {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.overlayImageContainer[data-image-count="1"] {
+  grid-template-columns: 1fr; /* One image takes full width */
+}
+
+.overlayImageContainer[data-image-count="2"] {
+  grid-template-columns: repeat(2, 1fr); /* Two images take half width each */
+}
+
+.overlayImageContainer[data-image-count="3"] {
+  grid-template-columns: repeat(3, 1fr); /* Three images take a third of the width each */
+}
+
+.overlayImageContainer[data-image-count="4"] {
+  grid-template-columns: repeat(4, 1fr); /* Four images take a quarter of the width each */
+}
+
+/* Add more rules as needed, or generalize with minmax() for larger counts */
+.overlayImageContainer[data-image-count="5"] {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.overlayImageContainer[data-image-count="6"] {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+/* Stack images when the screen is smaller than 200px */
+@media (max-width: 200px) {
+  .overlayImageContainer {
+      grid-template-columns: 1fr; /* All images stack */
+  }
+}
+
+@media (max-width: 200px) {
+  .overlayImage {
+      flex: 1 1 100%;
+  }
+}
+
+.overlayCode {
+    margin-bottom: 20px;
+}
+
+.overlayHorizontalLine {
+    margin: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.overlayListItem {
+    margin-bottom: 5px;
+} */
+
+.overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.overlay img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.overlay img.with-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay img.no-shadow {
+  box-shadow: none;
+}
+
+.overlay hr {
+    margin: 20px 0;
+    border-top: 1px solid #444;
+}
+
+.overlay ul,
+.overlay ol {
+    padding-left: 20px;
+}
+
+.overlay ul li,
+.overlay ol li {
+    margin-bottom: 10px;
+}
+
+.overlayInnerWrapper {
+    overflow-y: auto; 
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.overlayTableContainer {
+  margin: 1em 0em 2.5em;
+  overflow-x: auto;
+}
+
+.overlayTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.category {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.overlayTable th {
+  background-color: #ffeb96;
+  color: #000000;
+}
+
+.fulfilled {
+  background-color: #a5dd9b;
+  color: #000000;
+}
+
+.unfulfilled {
+  background-color: #ff7b54;
+  color: #000000;
+}
+
+.overlayTable {
+  border-collapse: collapse;
+  border: none;
+  text-align: left;
+}
+
+.overlayTable td {
+  border: 1px solid #706f75;
+}
+
+.overlayTable tr:last-child td {
+  border-bottom: none;
+}
+
+.overlayTable tr td:first-child {
+  border-left: none;
+}
+
+.overlayTable tr td:last-child {
+  border-right: none;
+}
+
+.overlayTable tr th {
+  border: 1px solid #706f75;
+}
+
+.overlayTable tr:first-child th {
+  border-top: none;
+}
+
+.overlayTable tr:last-child th {
+  border-bottom: none;
+}
+
+.overlayTable tr th:first-child {
+  border-left: none;
+}
+
+.overlayTable tr th:last-child {
+  border-right: none;
+}
+
+.overlayTable td, .overlayTable th {
+  padding: 5px 10px;
+}
+
+.overlayTable .rowspan-correction {
+  border-bottom: none;
+}
+
+.overlayTable caption {
+  font-weight: 400;
+  font-size: 0.975rem;
+  margin-bottom: 10px;
+}
