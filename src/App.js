@@ -67,7 +67,7 @@ const App = () => {
               transform: 'translate3d(0,10%,0)',
               textAlign: 'right'
             }}>
-                My name is Christoffer, and I'm a hands-on creator with a degree in sustainable design and autonomous systems/robotics. I have a passion for blending technology, design, and creativity. Whether I'm playing with electronics, wood and metal, computer code or design programs, I love turning ideas into reality. My work spans across multiple fields, and I thrive on challenges that combine technical precision with creative flair, and hopefully also some sustainability. Besides making projects, a find happiness in doing volunteer work, and I aim to make a positive impact to leave the earth a little bit better than we received it.<br />&#8595;
+                My name is Christoffer, and I'm a hands-on creator with a degree in sustainable design and autonomous systems (robotics). I have a passion for blending technology, design, and creativity. Whether I'm working with electronics, wood and metal, computer code or design programs, I love turning ideas into reality. My work spans across multiple fields, and I thrive on challenges that combine technical precision with creative flair, and hopefully also some sustainability. Besides making projects, I find happiness in doing volunteer work, and I aim to make a positive impact to leave the earth a little bit better than we received it.<br />&#8595;
             </div>
             <h1 style={{ position: 'absolute', top: topOffsets.academic, left: '10vw' }}>academic<br />projects</h1>
             <span style={{ position: 'absolute', top: topOffsets.arrow1, left: '20vw', fontSize: '12vw'}}>&#8595;</span>

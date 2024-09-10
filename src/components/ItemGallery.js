@@ -1021,8 +1021,8 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             { type: 'horizontalLine' },
             { type: 'image', 
               src: [
-                './images/overlays/Reol/Reol1.jpg', 
-                './images/overlays/Reol/Reol2.jpg'
+                './images/overlays/Reol/reol1.jpg', 
+                './images/overlays/Reol/reol2.jpg'
               ], 
               alt: 'Images showing the building process of the shelf', 
               caption: [
@@ -1031,7 +1031,7 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
               ], 
             },
             { type: 'image', 
-              src: './images/overlays/Reol/Reol3.jpg',
+              src: './images/overlays/Reol/reol3.jpg',
               caption: 'The finished shelf', 
               alt: 'Image showing the finished shelf'},
             
@@ -1163,9 +1163,9 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
 
             // { type: 'paragraphsubheader', text: 'Property card example'},
             { type: 'image', src: [
-                './images/overlays/monopoly/property_card1.jpg', 
-                './images/overlays/monopoly/property_card2.jpg', 
-                './images/overlays/monopoly/property_card3.jpg',
+                './images/overlays/Monopoly/property_card1.jpg', 
+                './images/overlays/Monopoly/property_card2.jpg', 
+                './images/overlays/Monopoly/property_card3.jpg',
               ], 
               caption: [
                 'Property card example 1',

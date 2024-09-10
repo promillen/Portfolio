@@ -7,7 +7,7 @@ function Overlay() {
     return (
       <div style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', width: '100%', height: '100%' }}>
         <span style={{ position: 'absolute', top: 40, left: 90, fontSize: '13px' }}>Christoffer's<br />portfolio</span>
-        <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px' }}>31/08/2024</div>
+        <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px', textAlign: 'right'}}><strong>Contact</strong><br /><a href="mailto:christoffer.kolbe@gmail.com">christoffer.kolbe@gmail.com</a></div>
       </div>
     )
   }
