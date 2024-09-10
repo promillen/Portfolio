@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("./fonts/InterVariable.ttf") format("truetype");
+    src: url("./assets/InterVariable.ttf") format("truetype");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: italic;
     font-weight: 100 900;
     font-display: swap;
-    src: url("./fonts/InterVariable-Italic.ttf") format("truetype");
+    src: url("./assets/InterVariable-Italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("./fonts/BricolageGrotesqueVariable.ttf") format("truetype");
+    src: url("./assets/BricolageGrotesqueVariable.ttf") format("truetype");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("./fonts/BebasNeue-Regular.ttf") format("truetype");
+    src: url("./assets/BebasNeue-Regular.ttf") format("truetype");
 }
 
 * {
