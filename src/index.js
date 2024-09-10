@@ -18,6 +18,6 @@ createRoot(document.getElementById('root')).render(
         <App />
       </Suspense>
       <Overlay />
-      <img src="/images/header_face.jpg" alt="Logo" style={{ position: 'absolute', top: 40, left: 40, width: 37 }} />
+      <img src="./images/header_face.jpg" alt="Logo" style={{ position: 'absolute', top: 40, left: 40, width: 37 }} />
     </>
   )

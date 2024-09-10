@@ -9,7 +9,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
   const { width: w, height: h } = useThree((state) => state.viewport);
 
   const textSize = 0.5;
-  const fontUrl = '/fonts/BricolageGrotesque-ExtraBold.ttf';
+  const fontUrl = './fonts/BricolageGrotesque-ExtraBold.ttf';
   const imgTextColor = '#000000';
 
   const scaleFactor = aspectRatio < 0.75 ? 1.5 : aspectRatio > 1.33 ? 0.8 : 1;
@@ -22,7 +22,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
     <Scroll>
     <ambientLight intensity={1} />
     <directionalLight position={[2, 2, 2]} intensity={1.5} />
-    <RotatingModel url="/images/face_3D_compressed.glb" scale={[w / 10, w / 10, w / 10]} position={[-w / 4.0, -h / 3, 0]} />
+    <RotatingModel url="./images/face_3D_compressed.glb" scale={[w / 10, w / 10, w / 10]} position={[-w / 4.0, -h / 3, 0]} />
     
       {/* Academic Projects */}
       <group>
@@ -33,7 +33,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
           position={[-w / 3, -h * 1.425, -1]}
         />
         <Item 
-          url="images/main_page/geolocation.jpg"
+          url="images/main_page/Geolocation.jpg"
           scale={[w / 3, w / 4.4, 1]}
           position={[-w / 4, -h * 0.9, 0]}
           text={"Development of an Ultralow Power Geolocation Device"}
@@ -61,13 +61,13 @@ function ItemGallery({aspectRatio, onImageClick}) {
               <>Through desk research and interviews with potential stakeholders, we identified business opportunities and use cases. We organized the empirical data into an affinity diagram, which helped us visually interpret the collected complex and non-repetitive data. This approach allowed themes, trends, and needs to emerge, providing a clear understanding of the requirements for the geolocation tracker. The identified requirements, detailed in the table below, guided the technical development of the prototype.</>
             },
             { type: 'image', 
-              src: '/images/overlays/Geolocation/Affi-opbygning.jpg',
+              src: './images/overlays/Geolocation/Affi-opbygning.jpg',
               alt: 'Cartoon showing the 6 steps in creating an Affinity diagram',
               caption: <>Representation of the workflow when creating an affinity diagram using the KJ-method (<a href="Iba, Yoshikawa, and Munakata, 2017">Iba, Yoshikawa, and Munakata, 2017</a>)</>,
               boxShadow: false
             },
             { type: 'image', 
-              src: ['/images/overlays/Geolocation/Affi-chaos.jpg', '/images/overlays/Geolocation/Affi-order.jpg'],
+              src: ['./images/overlays/Geolocation/Affi-chaos.jpg', './images/overlays/Geolocation/Affi-order.jpg'],
               alt: 'Pictures showing the initial chaos and the final Affinity Diagram',
               caption: ['The initial chaos during the affinity diagram workshop', 'The final affinity diagram'],},
             
@@ -79,9 +79,9 @@ function ItemGallery({aspectRatio, onImageClick}) {
               The results were promising, with the tracker demonstrating high accuracy and reliability in most conditions. The table below outlines the product requirements and indicates which were met by the prototype. While we did not fully achieve the ultra-low power target and encountered some limitations with GNSS scanning, the project successfully showcased the LR1110 chip's capabilities in a real-world context. It also provided valuable insights into the practical challenges and potential of low-power geolocation technologies using LoRaWAN, laying a solid foundation for future research and advancements in this field.</>
             },
             { type: 'image', src: [
-              '/images/overlays/Geolocation/PCB_v1.jpg', 
-              '/images/overlays/Geolocation/PCB_v2.jpg',
-              '/images/overlays/Geolocation/PCB_v3.jpg'
+              './images/overlays/Geolocation/PCB_v1.jpg', 
+              './images/overlays/Geolocation/PCB_v2.jpg',
+              './images/overlays/Geolocation/PCB_v3.jpg'
             ],
               alt: 'Three images showing the three iterations of the PCB design',
               caption: ['PCB version 1', 'PCB version 2', 'PCB version 3'],
@@ -165,8 +165,8 @@ function ItemGallery({aspectRatio, onImageClick}) {
             },
             { type: 'image', 
               src: [
-              '/images/overlays/Geolocation/final_product.jpg',
-              '/images/overlays/Geolocation/frontend.jpg'
+              './images/overlays/Geolocation/final_product.jpg',
+              './images/overlays/Geolocation/frontend.jpg'
               ],
               alt: 'Two images, one showing the final product and the other showing the frontend of the web interface',
               caption: ['Final product with antennas', 'Main screen of the web interface'],
@@ -176,7 +176,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
             { type: 'paragraphheader', text: 'Read more' },
             { type: 'unordered-list', items: [
               <><a href="https://github.com/MagnusErler/WiFi_and_Satellite_Scanner_for_Geolocation/tree/main">Github repository</a></>,
-              <><a href="/dataFiles/Wi-Fi and Satellite Scanner for Ultra-low Power Geolocation.pdf" target="_blank">Master thesis (PDF)</a></>
+              <><a href="./dataFiles/Wi-Fi and Satellite Scanner for Ultra-low Power Geolocation.pdf" target="_blank">Master thesis (PDF)</a></>
             ]},
           ])}
         />
@@ -202,7 +202,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
             We collaborated closely with Kristine Barenholdt, the project manager for The Circular Lab, to design and implement this unique initiative. Our work has laid the groundwork for this transformative space, challenging the status quo and fostering a culture of sustainability at Roskilde Festival and beyond, while teaching Roskilde Festival to effectively engage the entrepreneurs and other stakeholders in the lab’s development, ensuring a sustainable project that maximizes value for the entrepreneurs, the festival, its guests, and the community at large.</> },
 
             { type: 'image', 
-              src: '/images/overlays/DCL/Panorama.jpg', 
+              src: './images/overlays/DCL/Panorama.jpg', 
               caption: 'Panorama of the site before creation of The Circular Lab', 
               alt: 'Panorama of the site before creation of The Circular Lab. There is a spacious lawn surrounded by tress and a worn down barn with graffiti' 
             },
@@ -213,9 +213,9 @@ function ItemGallery({aspectRatio, onImageClick}) {
 
             { type: 'image', 
               src: [
-                '/images/overlays/DCL/opbygning1.jpg',
-                '/images/overlays/DCL/opbygning2.jpg',
-                '/images/overlays/DCL/opbygning3.jpg',
+                './images/overlays/DCL/opbygning1.jpg',
+                './images/overlays/DCL/opbygning2.jpg',
+                './images/overlays/DCL/opbygning3.jpg',
               ],
               caption: [
                 'Oblique image with drawn markings showing the future layout of outside area', 
@@ -230,9 +230,9 @@ function ItemGallery({aspectRatio, onImageClick}) {
 
             { type: 'image', 
               src: [
-                '/images/overlays/DCL/final1.jpg',
-                '/images/overlays/DCL/final2.jpg',
-                '/images/overlays/DCL/final3.jpg',
+                './images/overlays/DCL/final1.jpg',
+                './images/overlays/DCL/final2.jpg',
+                './images/overlays/DCL/final3.jpg',
               ],
               caption: [
                 'The front entrance portal to The Circular Lab', 
@@ -244,7 +244,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
             { type: 'horizontalLine' },
             { type: 'paragraphheader', text: 'Learn more' },
             { type: 'unordered-list', items: [
-              <a href="/dataFiles/Gruppe 10 - En samskabende designproces af Det Cirkulære Laboratorium på RF.pdf">Bachelor report (PDF)</a>,
+              <a href="./dataFiles/Gruppe 10 - En samskabende designproces af Det Cirkulære Laboratorium på RF.pdf">Bachelor report (PDF)</a>,
               <a href="https://www.roskilde-festival.dk/en/the-circular-lab">www.roskilde-festival.dk/en/the-circular-lab</a>,
               <a href="https://www.tuborgfondet.dk/project/fonden-roskilde-festival/">www.tuborgfondet.dk/project/fonden-roskilde-festival/</a>,
               <a href="https://www.youtube.com/watch?v=1_ZdYGxgrjw">Informational video about the project and area</a>,
@@ -281,12 +281,12 @@ function ItemGallery({aspectRatio, onImageClick}) {
             },
             
             { type: 'image', 
-              src: '/images/overlays/Jordvask/jordens_vej_før_jordvask.jpg', 
+              src: './images/overlays/Jordvask/jordens_vej_før_jordvask.jpg', 
               caption: 'The current journey of soil from excavation to landfill', 
               alt: 'Image showing the current journey of soil when used in the building industry: Soil excavation -> first time use -> biologic cleaning -> landfill' 
             },
             { type: 'image', 
-              src: '/images/overlays/Jordvask/jordens_vej_efter_jordvask.jpg', 
+              src: './images/overlays/Jordvask/jordens_vej_efter_jordvask.jpg', 
               caption: 'The future journey of soil where soil washing enables its reuse', 
               alt: 'Image showing the future journey of soil when implementing a soil washing plant: Soil excavation -> first time use -> Soil washing -> Reuse'  },
 
@@ -299,7 +299,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
               <>Our market analysis using Porter's Five Forces demonstrated that a transition towards sustainability could strengthen HD JordPark’s market position by enhancing their bargaining power and differentiating them from competitors. Additionally, we identified value gaps through the Customer Activity Cycle (CAC), such as the need for streamlined loading and unloading at the same location, which a soil washing unit will make possible.</>
             },
             { type: 'image', 
-              src: '/images/overlays/Jordvask/Porters.png', 
+              src: './images/overlays/Jordvask/Porters.png', 
               size: 60, 
               boxShadow: false,
               caption: 'Porter’s Five Forces analysis of the soil washing industry',
@@ -310,13 +310,13 @@ function ItemGallery({aspectRatio, onImageClick}) {
               <>The life cycle assessment of different scenarios showed that soil washing could be environmentally beneficial in the long run by reducing resource depletion and transportation emissions. However, the benefits are context-sensitive; in the short term, emissions from soil washing can be higher compared to the extraction of new resources due to current short transport distances for raw materials. To maximize the environmental impact of soil washing, it is crucial to establish multiple facilities across the country, minimizing transportation needs and associated emissions.</>
             },
             { type: 'image', 
-              src: '/images/overlays/Jordvask/LCIA BILAG .jpg',
+              src: './images/overlays/Jordvask/LCIA BILAG .jpg',
               boxShadow: false,
               caption: 'Life Cycle Assessment of current practice (2021), 2071 scenaria and with soil washing',
               alt: 'Image showing the Life Cycle Assessment of different scenarios for soil washing'
             },
             { type: 'image', 
-              src: '/images/overlays/Jordvask/Grafer til metoder.png',
+              src: './images/overlays/Jordvask/Grafer til metoder.png',
               boxShadow: false,
               caption: 'Above highlighted coloumns shown in a graph',
               size: 60,
@@ -326,12 +326,12 @@ function ItemGallery({aspectRatio, onImageClick}) {
               <>Our Actor-Network Theory (ANT) diagram revealed that truck drivers currently hold significant power in the industry, acting as both customers and key connectors to other clients. This imbalance of influence can hinder HD JordPark's ability to implement changes and differentiate their business model.</>
             },
             { type: 'image', 
-              src: '/images/overlays/Jordvask/ANT_gammel.jpg',
+              src: './images/overlays/Jordvask/ANT_gammel.jpg',
               boxShadow: false,
               caption: 'Actor-Network Theory diagram showing the current strength of the major stakeholders with relevance to HD JordPark',
               alt: 'Image showing the Actor-Network Theory diagram showing the current strength of the major stakeholders with relevance to HD JordPark'
             },
-            { type: 'image', src: '/images/overlays/Jordvask/ANT_ny.jpg',
+            { type: 'image', src: './images/overlays/Jordvask/ANT_ny.jpg',
               boxShadow: false,
               caption: 'Actor-Network Theory diagram showing the desired change in the relations between the stakeholders with relevance to HD Jordpark, if a soil washing plant is implemented',
               alt: 'Image showing the Actor-Network Theory diagram showing the desired change of the relations if a soil washing plant is implemented'
@@ -341,7 +341,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
               <>Using Life Cycle Management, we synthesized our analyses to identify where HD JordPark could initiate new, sustainable strategies and stand out in the market. The results suggest that HD JordPark is already on the right path, and despite the challenges posed by restructuring, there is significant potential for both economic and sustainable profitability. By embracing these changes, HD JordPark is poised not only to evolve its own operations but also to set an example for broader industry transformation towards sustainability.</>),
             },
             { type: 'image', 
-              src: '/images/overlays/Jordvask/Ny BMC.jpg',
+              src: './images/overlays/Jordvask/Ny BMC.jpg',
               boxShadow: false,
               caption: 'Business Model Canvas showing the new business model for HD JordPark with soil washing',
               alt: 'Image showing the Business Model Canvas showing the new business model for HD JordPark with soil washing'
@@ -473,7 +473,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
             { type: 'paragraphsubheader', text: 'Results' },
             { type: 'paragraph', text: 'The calculated centroids and apexes were visually confirmed against ground truth data, which showed a high accuracy in detecting these key points.'},
             { type: 'image', 
-              src: '/images/overlays/Corn/corn_apex.jpg',
+              src: './images/overlays/Corn/corn_apex.jpg',
               caption: 'Corn kernels with detected kernel count/centroids and apexes marked with blue text and purple dots, respectively',
               alt: 'Image showing the detected centroids and apexes of corn kernels'
             },
@@ -528,7 +528,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
             { type: 'paragraphsubheader', text: 'Results' },
             { type: 'paragraph', text: 'The function successfully categorized the kernels by color, with the output closely matching the ground truth labels for red and white-tipped kernels.'},
             { type: 'image', 
-              src: '/images/overlays/Corn/corn_color.jpg',
+              src: './images/overlays/Corn/corn_color.jpg',
               caption: 'Corn kernels marked with their calculated tip color',
               alt: 'Image showing the corn kernels with their calculated tip color'
             },
@@ -563,10 +563,10 @@ function ItemGallery({aspectRatio, onImageClick}) {
 
             { type: 'image', 
               src: [
-                '/images/overlays/Line tracer/original_picture.png',
-                '/images/overlays/Line tracer/grayscale.png',
-                '/images/overlays/Line tracer/black_white.png',
-                '/images/overlays/Line tracer/skeletonized.png',
+                './images/overlays/Line tracer/original_picture.png',
+                './images/overlays/Line tracer/grayscale.png',
+                './images/overlays/Line tracer/black_white.png',
+                './images/overlays/Line tracer/skeletonized.png',
               ],
               caption: [
                 'Original image of the line path',
@@ -589,7 +589,7 @@ function ItemGallery({aspectRatio, onImageClick}) {
             { type: 'paragraphheader', text: 'Final product' },
             {
               type: 'video',
-              src: 'images/overlays/Line tracer/solution.mp4',
+              src: './images/overlays/Line tracer/solution.mp4',
               controls: true,
               autoplay: false,
             }
@@ -691,7 +691,7 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             { type: 'paragraph', text: (
             <>The program successfully solved a series of increasingly difficult puzzles, demonstrating its robustness and accuracy. It efficiently handled varying numbers of strips and orientations, producing fully reconstructed images for all test cases.</>),},
             { type: 'image', 
-              src: '/images/overlays/Davinci/Assembled_pictures1.jpg',
+              src: './images/overlays/Davinci/Assembled_pictures1.jpg',
               caption: 'Reconstructed images from the Shredded Da Vinci puzzles',
               alt: 'Reconstructed images from the Shredded Da Vinci puzzles',
               size: 60,
@@ -754,12 +754,12 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             ],},
 
             { type: 'image', 
-              src: '/images/overlays/The Seed/Xd1.png',
+              src: './images/overlays/The Seed/Xd1.png',
               caption: 'Interactive user interface prototype made in Adobe XD',
               alt: 'Image showing the interactive user interface prototype made in Adobe Xd',
             },
             { type: 'image', 
-              src: '/images/overlays/The Seed/Xd3.png',
+              src: './images/overlays/The Seed/Xd3.png',
               caption: 'The different screens and the flow between them',
               alt: 'Image showing the different screens in Adobe Xd and the flow between them',
             },
@@ -769,7 +769,7 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             <>Our project not only met but exceeded the initial expectations of The Seed. By developing both the learning platform and the job-matching portal in-house, we provided a unified solution that enhances refugee integration into the labor market and supports employers in finding the right talent. This move - challenging the company on their initial thought - combined with the quality of our work, where recognised by the company, our university and Nordea, which awarded us the Nordea Quality Award for the best second year project 2018.</> },
 
             { type: 'image', 
-              src: '/images/overlays/The Seed/Poster final.jpg',
+              src: './images/overlays/The Seed/Poster final.jpg',
               caption: 'The Seed project poster showcasing the platform and its features',
               alt: 'Image showing the The Seed project poster showcasing the platform and its features',
             },
@@ -822,13 +822,13 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
                 'Assess object orientation relative to the x-axis in the world frame.',], },
 
             { type: 'image', 
-              src: '/images/overlays/LIDAR/LIDAR1.png',
+              src: './images/overlays/LIDAR/LIDAR1.png',
               caption: 'The process of detecting and calculating the corner placement from LIDAR data',
               alt: 'Image showing the process of detecting and calculating the corner placement from LIDAR data',
             },
 
             { type: 'image', 
-              src: '/images/overlays/LIDAR/LIDAR2.png',
+              src: './images/overlays/LIDAR/LIDAR2.png',
               caption: 'The four different object the robot has to be able to differentiate between, and the ratios between their sides',
               alt: 'Image showing the four different object the robot has to be able to differentiate between, and the ratios between their sides',
             },
@@ -859,15 +859,15 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             { type: 'horizontalLine' },
             { type: 'paragraphheader', text: 'Test' },
             { type: 'image', 
-              src: '/images/overlays/Bord/bord_blueprint.jpg',
+              src: './images/overlays/Bord/bord_blueprint.jpg',
               caption: 'Blueprint of the table', 
               alt: 'Image showing the blueprint of the table'},
             { type: 'image', 
-              src: '/images/overlays/Bord/bord_rendering.jpg',
+              src: './images/overlays/Bord/bord_rendering.jpg',
               caption: 'Rendering of the table', 
               alt: 'Image showing the rendering of the table'},
             { type: 'image', 
-              src: '/images/overlays/Bord/bord_real.jpg',
+              src: './images/overlays/Bord/bord_real.jpg',
               caption: 'The finished table', 
               alt: 'Image showing the finished table'},
           ])}
@@ -925,15 +925,15 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             <>I led the redesign and established the visual identity of Tietgen Times, a student run magazine for the dorm Tietgen Kollegiet, after a hiatus, modernizing its layout and style. Besides establishing a new foundation for its layout and visual identity, I oversaw the layout of the first few editions following its revival, wrote a few articles, and where a part of the workgroup which where responsible for defining the magazine's content and editorial direction, in connection with the relaunch.</> },
 
             { type: 'image', 
-              src: '/images/overlays/Tietgen Times/Mockup1.jpg',
+              src: './images/overlays/Tietgen Times/Mockup1.jpg',
               caption: 'Article in the new design format', 
               alt: 'Image showing an article in the new design format'},
             { type: 'image', 
-              src: '/images/overlays/Tietgen Times/Mockup2.jpg',
+              src: './images/overlays/Tietgen Times/Mockup2.jpg',
               caption: 'Table of contents and editorial in the new design format', 
               alt: 'Image showing the table of contents and editorial in the new design format'},
             { type: 'image', 
-              src: '/images/overlays/Tietgen Times/TT2.jpg',
+              src: './images/overlays/Tietgen Times/TT2.jpg',
               caption: 'Frontpage in the new design format', 
               alt: 'Image showing the frontpage in the new design format'},
             
@@ -963,7 +963,7 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             },
             { type: 'horizontalLine' },
             { type: 'image', 
-              src: '/images/overlays/Bodega/Poster-mockup.jpg', 
+              src: './images/overlays/Bodega/Poster-mockup.jpg', 
               boxShadow: false, 
               alt: 'Poster showing the location of pubs on top of Amager' 
             },
@@ -989,11 +989,11 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             },
             { type: 'horizontalLine' },
             { type: 'image', 
-              src: '/images/overlays/Beer label/label.jpg', 
+              src: './images/overlays/Beer label/label.jpg', 
               caption: 'Beer label design for Crimes Jungle Juice',
               alt: 'Image showing the beer label design'},
             { type: 'image', 
-              src: '/images/main_page/Dåse.jpg',
+              src: './images/main_page/Dåse.jpg',
               caption: 'Mockup of the beer can with the label', 
               alt: 'Image showing a mockup of the beer can with the label'},
           ])}
@@ -1015,14 +1015,14 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             },
 
             { type: 'image', 
-              src: '/images/overlays/Reol/Inspiration.webp',
+              src: './images/overlays/Reol/Inspiration.webp',
               caption: 'Inspiration for the shelf - Cobe Architects, Our Urban Living Room', 
               alt: '' },
             { type: 'horizontalLine' },
             { type: 'image', 
               src: [
-                '/images/overlays/Reol/Reol1.jpg', 
-                '/images/overlays/Reol/Reol2.jpg'
+                './images/overlays/Reol/Reol1.jpg', 
+                './images/overlays/Reol/Reol2.jpg'
               ], 
               alt: 'Images showing the building process of the shelf', 
               caption: [
@@ -1031,7 +1031,7 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
               ], 
             },
             { type: 'image', 
-              src: '/images/overlays/Reol/Reol3.jpg',
+              src: './images/overlays/Reol/Reol3.jpg',
               caption: 'The finished shelf', 
               alt: 'Image showing the finished shelf'},
             
@@ -1053,12 +1053,12 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
               mainTitle: 'Visual identity and content for small festival made with and for friends'  
             },
             { type: 'horizontalLine' },
-            { type: 'image', src: '/images/overlays/QUNival/Poster1.jpg', alt: '', caption: 'Poster for the festival' },
-            { type: 'image', src: '/images/overlays/QUNival/tegning.jpg', alt: '', caption: 'The process of reworking the original picture with my face for the poster' },
+            { type: 'image', src: './images/overlays/QUNival/Poster1.jpg', alt: '', caption: 'Poster for the festival' },
+            { type: 'image', src: './images/overlays/QUNival/tegning.jpg', alt: '', caption: 'The process of reworking the original picture with my face for the poster' },
             { type: 'image', 
               src: [
-                '/images/overlays/QUNival/Theo1.jpg', 
-                '/images/overlays/QUNival/Theo2.jpg', 
+                './images/overlays/QUNival/Theo1.jpg', 
+                './images/overlays/QUNival/Theo2.jpg', 
               ],
               caption: [
                 "Photo shoot picture with 80's effect 1",
@@ -1066,7 +1066,7 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
               ],
             alt: 'Images showing the photo shoot pictures with 80s effect', 
           },
-          { type: 'image', src: '/images/overlays/QUNival/gif.gif', caption: 'Moving graphic for Facebook promotion', alt: 'Moving graphic for Facebook promotion' },
+          { type: 'image', src: './images/overlays/QUNival/gif.gif', caption: 'Moving graphic for Facebook promotion', alt: 'Moving graphic for Facebook promotion' },
           ])}
         />
 
@@ -1111,9 +1111,9 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             { type: 'paragraphheader', text: 'Screenshots' },
             { type: 'paragraphsubheader', text: 'Program' },
             { type: 'image', src: [
-                '/images/overlays/Giro-413/setup.png', 
-                '/images/overlays/Giro-413/customize.png', 
-                '/images/overlays/Giro-413/score.png',
+                './images/overlays/Giro-413/setup.png', 
+                './images/overlays/Giro-413/customize.png', 
+                './images/overlays/Giro-413/score.png',
               ],
               caption: [
                 'Start screen - Program setup',
@@ -1124,7 +1124,7 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
           },
 
             { type: 'paragraphsubheader', text: 'Excel file' },
-            { type: 'image', src: '/images/overlays/Giro-413/excel.png', caption: 'Example Excel sheet included with the program', alt: 'Image showing the example Excel sheet included with the program. Showcasing 3 entries, 2 teams and a live score as a coloumn diagram.' },
+            { type: 'image', src: './images/overlays/Giro-413/excel.png', caption: 'Example Excel sheet included with the program', alt: 'Image showing the example Excel sheet included with the program. Showcasing 3 entries, 2 teams and a live score as a coloumn diagram.' },
           ])}
         />
 
@@ -1152,20 +1152,20 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
             { type: 'paragraphheader', text: 'Download the Game'},
 
             { type: 'unordered-list', items: [
-              <><a href="/dataFiles/Game board.pdf" target="_blank">Gameboard (printable version - PDF)</a><br/></>,
-              <><a href="/datFiles/Property cards for print.pdf" target="_blank">Property and action cards (printable version - PDF)</a><br/></>,
-              <><a href="/dataFiles/Monopoly Game Rules.pdf" target="_blank">Rule book (PDF)</a><br/></>,
-              <><a href="/dataFiles/Monopoly template files.zip">Template files (zip)</a><br/></>,
+              <><a href="./dataFiles/Game board.pdf" target="_blank">Gameboard (printable version - PDF)</a><br/></>,
+              <><a href="./dataFiles/Property cards for print.pdf" target="_blank">Property and action cards (printable version - PDF)</a><br/></>,
+              <><a href="./dataFiles/Monopoly Game Rules.pdf" target="_blank">Rule book (PDF)</a><br/></>,
+              <><a href="./dataFiles/Monopoly template files.zip">Template files (zip)</a><br/></>,
             ],},
 
             { type: 'paragraphheader', text: 'Product pictures'},
-            { type: 'image', src: '/images/main_page/Monopoly.jpg', caption: 'The gameboard', alt: 'Image showing the gameboard' },
+            { type: 'image', src: './images/main_page/Monopoly.jpg', caption: 'The gameboard', alt: 'Image showing the gameboard' },
 
             // { type: 'paragraphsubheader', text: 'Property card example'},
             { type: 'image', src: [
-                '/images/overlays/monopoly/property_card1.jpg', 
-                '/images/overlays/monopoly/property_card2.jpg', 
-                '/images/overlays/monopoly/property_card3.jpg',
+                './images/overlays/monopoly/property_card1.jpg', 
+                './images/overlays/monopoly/property_card2.jpg', 
+                './images/overlays/monopoly/property_card3.jpg',
               ], 
               caption: [
                 'Property card example 1',
@@ -1176,10 +1176,10 @@ findClosestEdge[currentImageSlices_List,remaingSlices_List,keys_List]:=Module[
 
             // { type: 'paragraphsubheader', text: 'Action card (Mail from Admin) example' },
             { type: 'image', 
-              src: '/images/overlays/monopoly/action_card.jpg', 
+              src: './images/overlays/monopoly/action_card.jpg', 
               alt: 'Mail from admin: You have been collecting pant in the circle. Recieve 4 cl.',
-              caption: 'Action card (mail from Admin) example' },
-
+              caption: 'Action card (mail from Admin) example' 
+            },
           ])}
         />
       </group>
